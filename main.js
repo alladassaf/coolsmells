@@ -18,6 +18,8 @@ toggleBtn.addEventListener("click", () => {
 
 const loc = location.pathname.replace("/", "")
 
+console.log(loc)
+
 navBarLis.forEach(li => {
     const anchor = li.querySelector("a")
     const anchorHrefSplit = anchor.href.split("/")
