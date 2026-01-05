@@ -19,6 +19,7 @@ toggleBtn.addEventListener("click", () => {
 const locArr = location.pathname.split("/")
 const loc = locArr[locArr.length -  1]
 
+console.log(locArr)
 console.log(loc)
 
 navBarLis.forEach(li => {
@@ -46,7 +47,7 @@ if (loc == "index.html") {
     const banner = document.querySelector(".banner")
     const slides = banner.querySelectorAll(".slide")
     const dishContainers = document.querySelectorAll(".dish_container")
-    let toggleSlides = setInterval(moveSlides, 5500)
+    let toggleSlides = setInterval(moveSlides, 4000)
     
     const favoriteDishes = [4, 9, 15]
     
@@ -54,12 +55,13 @@ if (loc == "index.html") {
     
     fillRecepies(data, favoriteDishes)
     
+    // slides[ind].classList.add('active')
     
     function moveSlides() {
         
         ind++
     
-        if (ind >= slides.length - 1) {
+        if (ind > slides.length - 1) {
             ind = 0
         }
     
