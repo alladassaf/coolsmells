@@ -16,7 +16,8 @@ toggleBtn.addEventListener("click", () => {
     navBar.classList.toggle('active', toggled)
 })
 
-const loc = location.pathname.replace("/", "")
+const locArr = location.pathname.split("/")
+const loc = locArr[locArr.length -  1]
 
 console.log(loc)
 
@@ -31,6 +32,10 @@ navBarLis.forEach(li => {
         anchor.classList.add("active")
     } else if (loc != anchor && anchor.classList.contains("active")) {
         anchor.classList.remove("active")
+    }
+
+    if (loc == "") {
+        anchor.classList.add("active")
     }
 })
 
