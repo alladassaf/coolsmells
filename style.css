@@ -808,7 +808,7 @@ h1::before {
 
 .search_result .bottom .title {
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
 }
 
 .search_result .bottom .list_desc {
@@ -818,7 +818,7 @@ h1::before {
 }
 
 .search_result .bottom .list_desc li {
-    font-size: 0.7rem;
+    font-size: 0.678rem;
 }
 
 .search_result .bottom .list_desc li:not(:last-child) {
@@ -833,8 +833,8 @@ h1::before {
 }
 
 .list_footer .review_count {
-    flex: 0 0 18px;
-    height: 18px;
+    flex: 0 0 1.15rem;
+    aspect-ratio: 1 / 1;
     font-size: 0.55rem;
     font-weight: bold;
     letter-spacing: 1.1px;
@@ -852,8 +852,8 @@ h1::before {
 }
 
 .stars .star {
-    width: 10px;
-    height: 10px;
+    width: 0.5rem;
+    height: 0.5rem;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
@@ -871,7 +871,8 @@ h1::before {
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.55rem;
+    letter-spacing: 1.2px;
     border: 2px solid var(--block-clr);
     cursor: pointer;
 }
@@ -1268,7 +1269,7 @@ footer {
 
     .search_result .bottom .title {
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .search_result .bottom .list_desc li {
