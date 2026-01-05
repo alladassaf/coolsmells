@@ -22,7 +22,7 @@ const loc = locArr[locArr.length -  1]
 console.log(locArr)
 console.log(loc)
 
-navBarLis.forEach(li => {
+navBarLis.forEach((li,  i) => {
     const anchor = li.querySelector("a")
     const anchorHrefSplit = anchor.href.split("/")
     const pageDir = anchorHrefSplit[anchorHrefSplit.length - 1]
@@ -35,14 +35,14 @@ navBarLis.forEach(li => {
         anchor.classList.remove("active")
     }
 
-    if (loc == "") {
+    if (loc == "" && i == 0) {
         anchor.classList.add("active")
     }
 })
 
 
 
-if (loc == "index.html") {
+if (loc == "index.html" || loc == "") {
     
     const banner = document.querySelector(".banner")
     const slides = banner.querySelectorAll(".slide")
