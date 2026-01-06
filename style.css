@@ -534,6 +534,7 @@ h1::before {
     aspect-ratio: 1 / 1;
     border-radius: 15px;
     border: 2px solid var(--block-clr);
+    background-image: url(./Images/blank_avatar.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1239,7 +1240,7 @@ footer {
     .item .bottom .name {
         flex: 0 0 100%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .bottom .rating .star {
