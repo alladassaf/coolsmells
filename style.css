@@ -1062,9 +1062,79 @@ h1::before {
 }
 
 footer {
-    padding: 10px;
+    padding: 10px var(--gutter);
     background-color: var(--secondary-clr);
     display: flex;
+    flex-flow: row wrap;
+    row-gap: 10px;
+}
+
+footer .logo {
+    flex: 0 0 max-content;
+}
+
+footer .logo svg {
+    width: 95px;
+}
+
+footer .sublist {
+    position: relative;
+    flex: 0 0 calc(100% - 95px);
+    display: flex;
+}
+
+.sublist ul {
+    margin-top: 30px;
+    margin-left: 20vw;
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+.sublist ul li {
+    font-size: 1.4rem;
+}
+
+.sublist ul li a {
+    color: black;
+}
+
+.sublist ul li a:visited {
+    background-color: darkblue;
+}
+
+footer div:where(.about_list, .copyright) {
+    flex: 0 0 50%;
+}
+
+footer .about_list {
+    display: flex;
+    gap: 12px;
+}
+
+.about_list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.about_list ul li {
+    font-size: 0.9rem;
+}
+
+.about_list ul li a {
+    color: black;
+}
+
+.about_list ul li a:visited {
+    color: darkblue;
+}
+
+
+footer .copyright {
+    display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
