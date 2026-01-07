@@ -146,6 +146,9 @@ main {
     position: absolute;
     inset: 0;
     clip-path: circle(0% at 0 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     /* transition: clip-path 250ms ease-in; */
 }
@@ -165,19 +168,19 @@ main {
 }
 
 .banner .slide:nth-child(1) {
-    background-color: red;
+    background-image: url(./Images/recepie_1.jpg);
 }
 
 .banner .slide:nth-child(2) {
-    background-color: blue;
+    background-image: url(./Images/recepie_2.jpg);
 }
 
 .banner .slide:nth-child(3) {
-    background-color: green;
+    background-image: url(./Images/recepie_3.jpg);
 }
 
 .banner .slide:nth-child(4) {
-    background-color: yellow;
+    background-image: url(./Images/recepie_4.jpg);
 }
 
 .favorites {
